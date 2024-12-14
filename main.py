@@ -43,7 +43,7 @@ def run(filename: str) -> None:
     
     win_max = window_max(data, 6)
 
-    Win_avg = window_average(data, 6)
+    win_avg = window_average(data, 6)
 
     std_dev = window_stddev(data, 6)
 
@@ -53,7 +53,7 @@ def run(filename: str) -> None:
     plt.savefig("images/maximums.png")
 
     fig, ax = plt.subplots()
-    ax.plot(Win_avg)
+    ax.plot(win_avg)
     plt.savefig("images/averages.png")
 
     fig, ax = plt.subplots()
@@ -61,7 +61,7 @@ def run(filename: str) -> None:
     plt.savefig("images/stdevs.png")
 
     # return all 3 lists
-    return win_max, Win_avg , std_dev
+    return win_max, win_avg , std_dev
 
     
 
