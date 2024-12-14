@@ -21,12 +21,6 @@ def filter_nondigits(data: list) -> list:
             continue
     return new_list
 
-        
-
-    
-
-
-
 def filter_outliers(data: list) -> list:
     
     outlier_list = []

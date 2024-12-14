@@ -15,8 +15,6 @@ def window_max(data: list, n: int) -> list:
        maximums.append(max(maximum))
     return maximums
 
-    
-
 def window_average(data: list, n: int) -> list:
     result = []
     
