@@ -30,13 +30,40 @@ def run(filename: str) -> None:
     Returns:
         list[int], list[int], list[int]: You will return the maximums, averages, and stdevs (in this order).
     """  
+    #open file and read into the `data` list
     data = []
+    file = open(filename)
+    for line in file:
+        data.append(line)
+    file.close
+    #Calculate rolling maximums, averages and Standard Deviations
+    data = filter_nondigits(data)
+    
+    data = filter_outliers(data)
+    
+    win_max = window_max(data, 6)
 
-    # open file and read into the `data` list
-    ...
+    Win_avg = window_average(data, 6)
+
+    std_dev = window_stddev(data, 6)
+
+    #Returning images for Maximums, average and Std_dev
+    fig, ax = plt.subplots()
+    ax.plot(win_max)
+    plt.savefig("images/maximums.png")
+
+    fig, ax = plt.subplots()
+    ax.plot(Win_avg)
+    plt.savefig("images/averages.png")
+
+    fig, ax = plt.subplots()
+    ax.plot(std_dev)
+    plt.savefig("images/stdevs.png")
 
     # return all 3 lists
-    ...
+    return win_max, Win_avg , std_dev
+
+    
 
 
 if __name__ == "__main__":
