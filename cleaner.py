@@ -37,7 +37,6 @@ def filter_outliers(data: list) -> list:
     
     # In a loop for the items greater than 30 and less than 250 we will append them to a new list converted to integers
     for item in data:
-     
         if item >30  and item < 250:
              outlier_list.append(int(item)) 
     #Skip numbers do that not meet the criteria in loop 
