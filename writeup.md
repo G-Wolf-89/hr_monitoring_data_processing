@@ -14,7 +14,28 @@ The standard deviation is describing the spread of the heart rate data points in
 
 Run your `main.py` module and look at the graph labeled "averages.png." Roughly speaking, where do you see the time series experience a significant difference in values along the x-axis? Point out all x-values where you notice a drastic difference in future values.
 
-Around the values of 3 , 8 , 11 , 20, 25 , 30 , 35, 40 
+Around the values of :
+
+from 0- 3 we see a decent decrease
+
+from about 5 to 8 we see a decrease 
+
+10 - 11 there is a drastic inrease 
+
+from 10-20 overall we see a big increase will small decreases from 12-16 along the way. 
+
+20 being the peak height of the data 
+
+from 25-30 we see the biggest decrease 
+
+35-36 we see a decent increase follwed by a decent decrease right back at 40. 
+
+
+at 40 there is increase but with dips aloing the way going up and down. 
+
+
+
+
 
 ## Question 4
 

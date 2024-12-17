@@ -35,7 +35,7 @@ def run(filename: str) -> None:
     file = open(filename)
     for line in file:
         data.append(line)
-    file.close
+    file.close()
     #Calculate rolling maximums, averages and Standard Deviations
     data = filter_nondigits(data)
     
